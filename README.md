@@ -2,6 +2,21 @@
 
 Brew Crew is a Flutter coffee-ordering app backed by Firebase Authentication and Cloud Firestore. Customers browse a live menu, customize drinks, place orders, and track status. Baristas manage menu availability and update incoming orders.
 
+<div align="center">
+  <table align="center">
+    <tr>
+      <td align="center" bgcolor="#02569B" width="300" height="60">
+        <a href="https://github.com/get543/brew_crew/releases/latest/download/app-release.apk">
+          <font face="Arial, sans-serif" color="#FFFFFF" size="5">
+            <b>&#128229; Download APK</b>
+          </font>
+        </a>
+      </td>
+    </tr>
+  </table>
+</div>
+
+
 ## Screenshots
 
 <details>

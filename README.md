@@ -247,4 +247,21 @@ firestore.rules                Firestore authorization rules
 - **Query requires an index:** Create the suggested Firestore composite index from the error link.
 - **Password autofill is unavailable:** Enable an Android Autofill service/password manager in device settings and save credentials with that service.
 
+### Add google-services.json to Repository Secret
+
+- Copy all the google-sevices.json to base64 with this command
+```pwsh
+# Windows
+[Convert]::ToBase64String([System.IO.File]::ReadAllBytes("$(pwd)/android/app/google-services.json"))
+```
+
+```bash
+# Universal (Works on both macOS and Linux without line breaks)
+openssl base64 -A -in android/app/google-services.json
+```
+
+- Go to https://github.com/get543/brew_crew/settings/secrets/actions or something similar
+- Add New Repository Secret
+- Name : FIREBASE_JSON_BASE64 
+- Secret : (text you copied from the command above)
 </details>
